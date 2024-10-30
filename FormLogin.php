@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration Form</title>
-
     <style>
     body {
         font-family: Arial, sans-serif;
@@ -60,14 +59,8 @@
     <div class="container">
         <h2>Registration Form</h2>
         <form action="php_basic.php" method="POST" id="registerForm">
-            <label for="firstname">First Name:</label>
-            <input type="text" id="firstname" name="firstname" required>
-
-            <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
 
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required>
@@ -75,19 +68,6 @@
             <input type="submit" value="Register" onclick="handleSubmit(event)">
         </form>
     </div>
-
-    <script>
-    function handleSubmit(event) {
-        var form = document.getElementById('registerForm');
-
-        if (form.checkValidity()) {
-            alert('Bạn đã đăng ký thành công!');
-        } else {
-            alert('Vui lòng điền đầy đủ thông tin!');
-            event.preventDefault();
-        }
-    }
-    </script>
 </body>
 
 </html>
